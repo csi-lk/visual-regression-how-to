@@ -1,0 +1,15 @@
+{
+  "packages": ["examples/*"],
+  "npmClient": "yarn",
+  "version": "independent",
+  "command": {
+    "version": {
+      "ignoreChanges": ["**/dist/**/*", "**/node_modules/**/*", "**/*.md"]
+    },
+    "publish": {
+      "ignoreChanges": ["**/dist/**/*", "**/node_modules/**/*", "**/*.md"]
+    }
+  },
+  "ignoreChanges": ["**/dist/**/*", "**/node_modules/**/*", "**/*.md"],
+  "useWorkspaces": true
+}
