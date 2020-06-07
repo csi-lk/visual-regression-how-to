@@ -22,11 +22,13 @@ jobs:
             ${{ runner.os }}-node_modules-
       - name: 'Install dependencies'
         run: yarn install --frozen-lockfile
-      - name: 'Storybook: Visual Regression'
-        run: yarn test
+      - name: 'Visual Regression Test (changed dir)'
+        run: cd examples/storybook-components && yarn test:ci
         env:
           PREVIOUS_SHA: ${{ github.event.pull_request.base.sha }}
           CURRENT_SHA: ${{ github.event.pull_request.head.sha }}
           CHANGE_URL: ${{ github.event.pull_request.html_url }}
+          HAPPO_COMMAND: '../../node_modules/happo.io/build/cli.js'
           HAPPO_API_KEY: ${{ secrets.HAPPO_API_KEY }}
           HAPPO_API_SECRET: ${{ secrets.HAPPO_API_SECRET }}
+          INSTALL_CMD: 'lerna bootstrap'
