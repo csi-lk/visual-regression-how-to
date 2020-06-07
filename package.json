@@ -1,0 +1,33 @@
+{
+  "name": "visual-regression-how-to",
+  "version": "1.0.0",
+  "description": "Companion repo to Callum Silcock's talk on \"Automating Design Review with Visual Regression\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csi-lk/visual-regression-how-to.git"
+  },
+  "keywords": [
+    "visual",
+    "regression",
+    "how",
+    "tutorial",
+    "automating",
+    "percy",
+    "happo",
+    "cypress",
+    "pdf"
+  ],
+  "author": "Callum Silcock <github@csi.lk> (https://csi.lk)",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/csi-lk/visual-regression-how-to/issues"
+  },
+  "homepage": "https://github.com/csi-lk/visual-regression-how-to#readme",
+  "workspaces": [
+    "examples/*"
+  ]
+}
