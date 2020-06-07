@@ -4,7 +4,7 @@
   "description": "Companion repo to Callum Silcock's talk on \"Automating Design Review with Visual Regression\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "lerna run test"
   },
   "private": true,
   "repository": {

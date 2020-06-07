@@ -3,12 +3,17 @@
   "version": "0.0.0",
   "description": "How to visual regression test components in storybook using Happo.io",
   "scripts": {
-    "storybook": "start-storybook"
+    "storybook": "start-storybook",
+    "test:visual": "happo run test",
+    "test": "yarn test:visual"
   },
   "license": "WTFPL",
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@storybook/html": "^5.3.19",
-    "babel-loader": "^8.1.0"
+    "babel-loader": "^8.1.0",
+    "dotenv": "^8.2.0",
+    "happo-plugin-storybook": "^2.5.3",
+    "happo.io": "^5.4.2"
   }
 }
