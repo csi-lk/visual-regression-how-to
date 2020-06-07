@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/csi-lk/visual-regression-how-to.git"
@@ -29,5 +30,8 @@
   "homepage": "https://github.com/csi-lk/visual-regression-how-to#readme",
   "workspaces": [
     "examples/*"
-  ]
+  ],
+  "devDependencies": {
+    "lerna": "^3.22.0"
+  }
 }
