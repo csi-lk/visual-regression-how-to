@@ -1,0 +1,12 @@
+{
+  "name": "page-renders",
+  "version": "0.0.0",
+  "description": "How to visual regression test static sites responsivley using Percy.io",
+  "scripts": {
+    "test": "PERCY_TOKEN=$PERCY_STATIC_SITE percy snapshot src/ --config percy.yml"
+  },
+  "license": "WTFPL",
+  "devDependencies": {
+    "@percy/agent": "^0.26.9"
+  }
+}
