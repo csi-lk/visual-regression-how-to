@@ -5,7 +5,7 @@
   "scripts": {
     "storybook": "start-storybook",
     "build": "build-storybook",
-    "snapshot": "percy-storybook --widths=320,1280",
+    "snapshot": "PERCY_TOKEN=$PERCY_STORYBOOK_COMPONENTS percy-storybook --widths=320,1280",
     "test": "run-s build snapshot"
   },
   "license": "WTFPL",
