@@ -10,11 +10,19 @@ yarn storybook
 
 Then should open at http://localhost:61415/
 
-## Testing with Happo.io
+## Testing with percy.io
 
-We're going to utalize [happo.io](https://docs.happo.io/docs/storybook) for this setup
+We're going to utalize [percy.io](https://docs.percy.io/docs/storybook) for this setup
 
-You'll need to setup an account with them and a `.env` with your `HAPPO_API_KEY` and `HAPPO_API_SECRET` set up (or set as env vars)
+Then setup your `PERCY_TOKEN` on your env with:
+
+```
+# Windows
+$ set PERCY_TOKEN=<your token here>
+
+# Unix
+$ export PERCY_TOKEN=<your token here>
+```
 
 Then run
 

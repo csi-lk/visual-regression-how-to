@@ -2,6 +2,7 @@
 ###########################
 
 .env
+storybook-static
 
 # Editors #
 ###########
