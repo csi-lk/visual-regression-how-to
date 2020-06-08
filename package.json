@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "lerna run test",
-    "test:ci": "lerna run test:ci"
+    "test:ci": "lerna run test:ci",
+    "build": "lerna run build"
   },
   "private": true,
   "repository": {

@@ -1,4 +1,4 @@
-require('dotenv').config()
+if (!process.env.HAPPO_API_KEY) require('dotenv').config()
 const { RemoteBrowserTarget } = require('happo.io')
 const happoPluginStorybook = require('happo-plugin-storybook')
 

@@ -4,7 +4,8 @@
   "description": "How to visual regression test components in storybook using Happo.io",
   "scripts": {
     "storybook": "start-storybook",
-    "test:ci": "happo-ci",
+    "build": "build-storybook",
+    "test:ci": "happo-ci-github-actions",
     "test": "happo run test"
   },
   "license": "WTFPL",
@@ -14,6 +15,6 @@
     "babel-loader": "^8.1.0",
     "dotenv": "^8.2.0",
     "happo-plugin-storybook": "^2.5.3",
-    "happo.io": "^5.4.2"
+    "happo.io": "^5.5.0"
   }
 }

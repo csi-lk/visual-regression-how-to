@@ -4,7 +4,7 @@ on:
     branches:
       - master
 jobs:
-  re-check:
+  master_check:
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout'
@@ -26,12 +26,9 @@ jobs:
       - name: 'Install dependencies'
         run: yarn install --frozen-lockfile
       - name: 'Visual Regression Test (changed dir)'
-        run: cd examples/storybook-components && yarn test:ci
+        run: yarn test
         env:
-          PREVIOUS_SHA: ${{ github.event.pull_request.base.sha }}
-          CURRENT_SHA: ${{ github.event.pull_request.head.sha }}
-          CHANGE_URL: ${{ github.event.pull_request.html_url }}
-          HAPPO_COMMAND: '../../node_modules/happo.io/build/cli.js'
-          HAPPO_API_KEY: ${{ secrets.HAPPO_API_KEY }}
-          HAPPO_API_SECRET: ${{ secrets.HAPPO_API_SECRET }}
-          INSTALL_CMD: 'lerna bootstrap'
+          GITHUB_TARGET_BRANCH: ${{ github.base_ref }}
+          GITHUB_REPO: ${{ github.repository }}
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+          PERCY_BRANCH: ${{ github.head_ref }}
