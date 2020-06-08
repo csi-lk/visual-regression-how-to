@@ -1,6 +1,6 @@
 # Storybook Components
 
-> How to visual regression test components in storybook using Happo.io
+> How to visual regression test components in storybook using Percy.io
 
 ## Running Storybook
 

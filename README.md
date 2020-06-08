@@ -4,9 +4,18 @@
 
 A companion to [Callum Silcock's](https://csi.lk) talk on "Automating Design Review with Visual Regression" this repo gives you some simple examples for visually testing:
 
-- Components with Storybook
+### Components within Storybook
+
+[📂 storybook-components](./examples/storybook-components/README.md)
+
+[![Percy URL](https://percy.io/static/images/percy-badge.svg)](https://percy.io/csilk/storybook-components)
+
+> How to visual regression test components in storybook using Percy.io
+
+---
+
+_Note: This repo is currently a work in progress, wip items:_
+
 - Generated PDF Files
 - Page Renders (responsivley)
 - Integration Steps (Cypress)
-
-_Note: This repo is currently a work in progress_
