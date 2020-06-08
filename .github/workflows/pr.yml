@@ -27,5 +27,6 @@ jobs:
         env:
           GITHUB_TARGET_BRANCH: ${{ github.base_ref }}
           GITHUB_REPO: ${{ github.repository }}
-          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+          PERCY_STATIC_SITE: ${{ secrets.PERCY_STATIC_SITE }}
+          PERCY_STORYBOOK_COMPONENTS: ${{ secrets.PERCY_STORYBOOK_COMPONENTS }}
           PERCY_BRANCH: ${{ github.head_ref }}
