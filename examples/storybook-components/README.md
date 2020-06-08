@@ -14,14 +14,16 @@ Then should open at http://localhost:61415/
 
 We're going to utalize [percy.io](https://docs.percy.io/docs/storybook) for this setup
 
-Then setup your `PERCY_TOKEN` on your env with:
+Usually you would setup a `PERCY_TOKEN` with your API Token but as I'm running multiple examples I am setting `PERCY_TOKEN` from `PERCY_STORYBOOK_COMPONENTS`
+
+Set this up in your env with:
 
 ```
 # Windows
-$ set PERCY_TOKEN=<your token here>
+$ set PERCY_STORYBOOK_COMPONENTS=<your token here>
 
 # Unix
-$ export PERCY_TOKEN=<your token here>
+$ export PERCY_STORYBOOK_COMPONENTS=<your token here>
 ```
 
 Then run
@@ -29,3 +31,5 @@ Then run
 ```
 yarn test
 ```
+
+To see percy take snapshots and upload
