@@ -12,6 +12,14 @@ A companion to [Callum Silcock's](https://csi.lk) talk on "Automating Design Rev
 
 > How to visual regression test components in storybook using Percy.io
 
+### Responsive Static Sites
+
+[📂 responsive-static-site](./examples/responsive-static-site/README.md)
+
+[![Percy URL](https://percy.io/static/images/percy-badge.svg)](https://percy.io/csilk/responsive-static-site)
+
+> How to visual regression test static sites responsively using Percy.io
+
 ---
 
 _Note: This repo is currently a work in progress, wip items:_

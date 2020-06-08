@@ -1,6 +1,6 @@
 # Responsive Static Sites
 
-> How to visual regression test static sites responsivley using Percy.io
+> How to visual regression test static sites responsively using Percy.io
 
 This is just a simple html / css file with a responsive table in it that we're going to snapshot
 
