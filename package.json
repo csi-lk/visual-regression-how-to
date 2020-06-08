@@ -4,9 +4,10 @@
   "description": "Companion repo to Callum Silcock's talk on \"Automating Design Review with Visual Regression\"",
   "main": "index.js",
   "scripts": {
-    "test": "lerna run test",
+    "test": "lerna run test --since",
+    "build": "lerna run build --since",
     "test:ci": "lerna run test:ci",
-    "build": "lerna run build"
+    "publish": "lerna run publish"
   },
   "private": true,
   "repository": {

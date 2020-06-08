@@ -4,9 +4,8 @@
   "description": "How to visual regression test components in storybook using Happo.io",
   "scripts": {
     "storybook": "start-storybook",
-    "build": "build-storybook",
-    "snapshot": "percy-storybook --widths=320,1280",
-    "test": "run-s build snapshot"
+    "test:ci": "happo-ci-github-actions",
+    "test": "happo run test"
   },
   "license": "WTFPL",
   "devDependencies": {
@@ -14,6 +13,8 @@
     "@percy/storybook": "^3.3.0",
     "@storybook/html": "^5.3.19",
     "babel-loader": "^8.1.0",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "happo-plugin-storybook": "^2.5.3",
+    "happo.io": "^5.5.1"
   }
 }

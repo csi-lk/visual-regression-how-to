@@ -21,11 +21,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node_modules-
       - name: 'Install dependencies'
-        run: yarn install --frozen-lockfile
-      - name: 'Visual Regression Test (changed dir)'
-        run: yarn test
+        run: yarn install --frozen-lockfile && yarn lerna bootstrap
+      - name: 'Visual Regression Test'
+        run: yarn test:ci
         env:
-          GITHUB_TARGET_BRANCH: ${{ github.base_ref }}
-          GITHUB_REPO: ${{ github.repository }}
-          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
-          PERCY_BRANCH: ${{ github.head_ref }}
+          HAPPO_COMMAND: "./node_modules/.bin/happo"
+          HAPPO_API_KEY: ${{ secrets.HAPPO_API_KEY }}
+          HAPPO_API_SECRET: ${{ secrets.HAPPO_API_SECRET }}
