@@ -20,10 +20,10 @@ A companion to [Callum Silcock's](https://csi.lk) talk on "Automating Design Rev
 
 > How to visual regression test static sites responsively using Percy.io
 
----
+## 🙊 The Talk
 
-_Note: This repo is currently a work in progress, wip items:_
+If you missed the talk check out:
 
-- Generated PDF Files
-- Page Renders (responsivley)
-- Integration Steps (Cypress)
+- [Speakerdeck - External (slides)](https://speakerdeck.com/csilk/automating-design-review-with-visual-regression)
+- [PDF - Here (slides)](./talk/automating-design-review-with-visual-regression.pdf)
+- [Raw markdown - Here (notes + slides)](./talk/automating-design-review-with-visual-regression-raw-md)
