@@ -30,3 +30,13 @@ jobs:
           PERCY_STATIC_SITE: ${{ secrets.PERCY_STATIC_SITE }}
           PERCY_STORYBOOK_COMPONENTS: ${{ secrets.PERCY_STORYBOOK_COMPONENTS }}
           PERCY_BRANCH: ${{ github.head_ref }}
+  approve_deps:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: hmarr/auto-approve-action@v2.0.0
+        if: github.actor == 'dependabot[bot]' || github.actor ==
+          'dependabot-preview[bot]'
+        with:
+          github-token: '${{ secrets.GITHUB_TOKEN }}'
