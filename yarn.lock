@@ -1998,10 +1998,10 @@
   dependencies:
     "@types/node" ">= 8"
 
-"@percy/agent@^0.28.0":
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/@percy/agent/-/agent-0.28.0.tgz#28ad18fcc565222c0c9d1152e6b7e8d391f71592"
-  integrity sha512-t+Pan/vQnxSW6wKC57UV6kSoWR2t2SwB38Zmr91SI1fYkoWEsKfmJNTIfSpmbM3rnpdpMnxIMjRfdejb2NwVoA==
+"@percy/agent@^0.28.1":
+  version "0.28.1"
+  resolved "https://registry.yarnpkg.com/@percy/agent/-/agent-0.28.1.tgz#e4cb7f4477bd6889fd4bdf96da3111390907c619"
+  integrity sha512-urS0Vep2wakU08+44tjQz9KnR5cIq8ogRfkS8xipEdR9/SYOBLxj0BaVQ/6wQh9n24jKJSGiema5QZmvQQRl7g==
   dependencies:
     "@oclif/command" "1.5.19"
     "@oclif/config" "^1"
